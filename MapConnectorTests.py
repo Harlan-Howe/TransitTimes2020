@@ -76,7 +76,7 @@ class MyTestCase(unittest.TestCase):
         for num in edge_nums:
             path.append((self.connector.edges[num]))
         self.connector.first_city_id = 58
-        self.connector.second_city_id = 89
+        self.connector.second_city_id = 4
 
         print(self.connector.describe_path(path))
         self.assertEqual("Path found:\n• Albuquerque, NM\n• Oklahoma City, OK\n• Little Rock, AR\n• Dallas, TX\n• Fort Worth, TX\n• El Paso, TX\n• Tucson, AZ\ntotal_distance = 112256.0	total_time = 3462014.0",
